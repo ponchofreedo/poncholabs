@@ -1,0 +1,22 @@
+// bower:scss
+// endbower
+
+// Source Sans Font Family
+// Light and Light Italic
+/* Google Font Imports */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i, 500');
+$source-sans: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+
+// Titillium Web Font Family
+// Regular and Bold
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,700,700i');
+$titillium: 'Titillium Web', 'Helvetica Neue', Arial, sans-serif;
+
+// Themify Icon Font
+@font-face {
+  font-family: 'Themify';
+  src:url('fonts/themify.eot?-fvbane');
+  src:url('fonts/themify.eot?#iefix-fvbane') format('embedded-opentype'), url('fonts/themify.woff?-fvbane') format('woff'), url('fonts/themify.ttf?-fvbane') format('truetype'), url('fonts/themify.svg?-fvbane#themify') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

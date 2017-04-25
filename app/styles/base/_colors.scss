@@ -1,14 +1,30 @@
 // bower:scss
 // endbower
 
-// color definitions
-$orange: #FF7146;
-$green: #00D7AF;
-$black: #141414;
-$gray-1: #48525C;
-$gray-2: #708090;
-$gray-3: #ebebf0;
-$ghost: #fafaff;
-$white: #ffffff;
+// color extensions
+%black {
+  color: $black;
+}
+%white {
+  color: $white;
+}
+%ghost-1 {
+  color: $ghost-1;
+}
+%gray-1 {
+  color: $gray-1;
+}
+%gray-2 {
+  color: $gray-2;
+}
+%gray-3 {
+  color: $gray-3;
+}
+%gray-4 {
+  color: $gray-4;
+}
+%teal-1 {
+  color: $teal-1;
+}
 
 // end

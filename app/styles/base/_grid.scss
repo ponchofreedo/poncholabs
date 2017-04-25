@@ -1,0 +1,144 @@
+// bower:scss
+// endbower
+@import "helpers/_mixins";
+
+$d-setting-float: left;
+$d-col-size: 96;
+
+[class*='--container'] {
+  display: block;
+}
+
+header {
+  padding-top: 40px;
+}
+
+footer {
+  padding-bottom: 40px;
+}
+
+section {
+  padding-top: 260px;
+  padding-bottom: 220px;
+}
+
+.grid {
+  display: block;
+  margin-left: 33px;
+  margin-right: 33px;
+}
+
+.grid--row {
+  width: 100%;
+  max-width: 1440px;
+  min-width: 768px;
+  margin: 0 auto;
+  // I'm not responsive just yet :/ ...
+  // padding-left:20px;
+  // padding-right:20px;
+  .row {
+    min-width: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.col,
+.cols {
+  // margin-left: $gutter-space;
+  float: $d-setting-float;
+  min-height: 1px;
+  @include box-sizing(border-box);
+}
+
+.row-push-1,
+.row-push-2,
+.row-push-3,
+.row-push-4,
+.row-push-5,
+.row-push-6,
+.row-push-7,
+.row-push-8,
+.row-push-9,
+.row-push-10,
+.row-push-11,
+.row-push-12,
+.row-push-13 {
+  padding-left: default;
+}
+
+.row-pull-1,
+.row-pull-2,
+.row-pull-3,
+.row-pull-4,
+.row-pull-5,
+.row-pull-6,
+.row-pull-7,
+.row-pull-8,
+.row-pull-9,
+.row-pull-10,
+.row-pull-11,
+.row-pull-12,
+.row-pull-13 {
+  padding-right: default;
+}
+
+.row-pad-1,
+.row-pad-2,
+.row-pad-3 {
+  padding-left: default;
+  padding-right: default;
+}
+
+.row-push-1 {
+  padding-left: ($d-col-size * 1) * 1px;
+}
+.row-push-2 {
+  padding-left: ($d-col-size * 2) * 1px;
+}
+.row-push-3 {
+  padding-left: ($d-col-size * 3) * 1px;
+}
+.row-push-4 {
+  padding-left: ($d-col-size * 4) * 1px;
+}
+.row-push-5 {
+  padding-left: ($d-col-size * 5) * 1px;
+}
+.row-push-6 {
+  padding-left: ($d-col-size * 6) * 1px;
+}
+.row-push-7 {
+  padding-left: ($d-col-size * 7) * 1px;
+}
+.row-push-8 {
+  padding-left: ($d-col-size * 8) * 1px;
+}
+.row-push-9 {
+  padding-left: ($d-col-size * 9) * 1px;
+}
+.row-push-10 {
+  padding-left: ($d-col-size * 10) * 1px;
+}
+.row-push-11 {
+  padding-left: ($d-col-size * 11) * 1px;
+}
+.row-push-12 {
+  padding-left: ($d-col-size * 12) * 1px;
+}
+.row-push-13 {
+  padding-left: ($d-col-size * 13) * 1px;
+}
+
+.row-pad-1 {
+  padding-left: ($d-col-size * 1) * 1px;
+  padding-right: ($d-col-size * 1) * 1px;
+}
+.row-pad-2 {
+  padding-left: ($d-col-size * 2) * 1px;
+  padding-right: ($d-col-size * 2) * 1px;
+}
+.row-pad-3 {
+  padding-left: ($d-col-size * 3) * 1px;
+  padding-right: ($d-col-size * 3) * 1px;
+}

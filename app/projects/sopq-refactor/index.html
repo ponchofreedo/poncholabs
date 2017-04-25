@@ -1,0 +1,92 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>zach freed // nk-airlines</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css ../../styles/poncholabs.css -->
+    <link rel="stylesheet" href="/styles/poncholabs.css">
+    <!-- endbuild -->
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>00866d
+    <![endif]-->
+
+    <header class="header--container" id="project">
+      <div class="home--main-container grid">
+        <div class="grid--row row">
+          <div class="row-pad-3" id="project-header">
+            <span class="floater-container">
+                <h4 class="floater"><a href="/#projects">go back.</a></h4>
+            </span>
+            <h1>sale template refactoring</h1>
+            <p>two words: lighter. templates.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main--container" id="project">
+      <div class="home--main-container grid">
+        <div class="grid--row row">
+          <section class="row-pad-3" id="project-content">
+            <article>
+                <h4 class="text-left">overview.</h4>
+                <p>Originally when I wrote the first sale templates we started sending back in 2015, there was a goal to reduce file-size and introduce some new techniques. Then we had this glorious idea to start using background-images. This started as a novel gesture, but blew up into our everyday go-to...which was not the intention.</p>
+                <p class="break">I started using our testing platform, Litmus, to run some diagnostic tests and noticed that these templates were HUGE. Completely and unnecessarily HUGE. So from that moment, after I presented to Justin and co, we decided to try a test template. I stripped just about everything from the original and built a new one from scratch.</p>
+                <img height="auto" width="100%" src="/images/sopq-refactor/old-1.png" align="center" />
+                <span class="caption">Bad.</span>
+            </article>
+            <article style="padding-top:48px;">
+                <h4 class="text-left">the redesign.</h4>
+                <p>I approached this one with the idea of just stripping it down. We tested 2 versions over the course of the year. One of the tests, the first one, was more of an on-the-fly test that just happened.</p>
+                <img height="auto" width="100%" src="/images/sopq-refactor/new-1.png" align="center" />
+                <span class="caption">Good.</span>
+                <p class="break">Then later in the year I took it a step further and really broke the template down into pieces and rebuilt it much cleaner and much more functional. The final result was roughly 300-500k in total file load reduction which led to a dramatically quicker open, an increased open rate, and an increased CTR, in the end.</p>
+                <img height="auto" width="100%" src="/images/sopq-refactor/new-2.png" align="center" />
+                <span class="caption">Better.</span>
+            </article>
+          </section>
+        </div>
+      </div>
+    </div>
+    <footer class="footer--container">
+      <div class="footer--main-container grid">
+        <div class="grid--row row">
+          <div class="row-pad-3" id="footer">
+            <h3 class="text-center"><a href="/#projects">go back.</a></h3>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+  </body>
+</html>

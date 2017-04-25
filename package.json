@@ -42,5 +42,8 @@
         "single"
       ]
     }
+  },
+  "dependencies": {
+    "gulp-css-url-to-absolute": "^1.0.1"
   }
 }

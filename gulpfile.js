@@ -10,6 +10,7 @@ const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
 var dev = true;
+var cssUrlToAbsolute = require('gulp-css-url-to-absolute');
 
 gulp.task('styles', () => {
   return gulp.src('app/styles/*.scss')
@@ -59,6 +60,9 @@ gulp.task('html', ['styles', 'scripts'], () => {
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.cssnano({safe: true, autoprefixer: false})))
     .pipe($.if('*.html', $.htmlmin({collapseWhitespace: true})))
+    .pipe(cssUrlToAbsolute({
+      root: 'app/styles/*.css'//input your root path
+    }))
     .pipe(gulp.dest('dist'));
 });
 

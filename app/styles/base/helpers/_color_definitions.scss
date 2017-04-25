@@ -1,0 +1,36 @@
+// bower:scss
+// endbower
+
+// color definitions
+$black: #141414;
+$ghost-1: #fafaff;
+$gray-1: #48525c;
+$gray-2: #6c7a88;
+$gray-3: #708090;
+$gray-4: #cfd2de;
+$teal-1: #00d7af;
+$white: #ffffff;
+
+// specials
+$knights-purple: #6c4598;
+$pcln-blue: #0a84c1;
+
+// color extensions
+%black {
+  color: $black; }
+%white {
+  color: $white; }
+%ghost-1 {
+  color: $ghost-1; }
+%gray-1 {
+  color: $gray-1; }
+%gray-2 {
+  color: $gray-2; }
+%gray-3 {
+  color: $gray-3; }
+%gray-4 {
+  color: $gray-4; }
+%teal-1 {
+  color: $teal-1; }
+
+// end

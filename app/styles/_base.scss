@@ -1,0 +1,85 @@
+// bower:scss
+// endbower
+
+@import 'base/_meyer_reset';
+@import 'base/_typography';
+@import 'base/_colors';
+@import 'base/_grid';
+
+* { @include box-sizing(border-box); }
+
+html, body {
+  height: 100%;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: $ghost-1;
+  font-family: $source-sans;
+  color: $gray-1;
+  font-size: $global-font-size;
+  font-weight: 300;
+  text-transform:lowercase;
+}
+
+.main--container {
+  div.grid--row {
+    background-color: $white;
+  }
+}
+
+#introduction {
+  background-color: $gray-2;
+  padding-top: 160px;
+  padding-bottom: 152px;
+}
+
+#project-header {
+  padding-top: 160px;
+  padding-bottom: 152px;
+  background-color: $teal-1;
+  span {
+    display:block;
+    &.floater-container {
+      position: relative;
+      color: darken($teal-1, 5.6%);
+      h4 {
+        color: inherit;
+        &.floater {
+          position:absolute;
+          top: -86px;
+        }
+      }
+    }
+  }
+}
+
+#footer {
+  background-color: $gray-4;
+  padding-top: 160px;
+  padding-bottom: 152px;
+}
+
+article {
+  img {
+    margin-top: 24px;
+    margin-bottom:0px;
+    padding-bottom:0px;
+    border:1px solid $gray-4;
+  }
+}
+
+// some helper stuffs for typography
+.text-center { @extend %text-center; }
+.text-left { @extend %text-left; }
+.text-right { @extend %text-right; }
+// partial for extending text-align left and right classes
+%text-center { text-align: center; }
+%text-left { text-align: left; }
+%text-right { text-align: right; }
+
+// main structure
