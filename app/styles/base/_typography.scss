@@ -1,16 +1,123 @@
 // bower:scss
 // endbower
 
-// Source Sans Font Family
-// Light and Light Italic
-/* Google Font Imports */
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i');
-$Source-Sans: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
-
-// Titillium Web Font Family
-// Regular and Bold
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,700');
-$Titillium: 'Titillium Web', 'Helvetica Neue', Arial, sans-serif;
+@import 'helpers/_font_imports';
+@import 'helpers/_color_definitions';
 
 // Global Declarations
-$global-font-size: 16px;
+$global-font-size: 22px;
+
+$h1-size: 128px;
+$h2-size: 64px;
+$h3-size: 36px;
+$h4-size: 18px;
+$p-size: 28px;
+
+p {
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: $p-size;
+  line-height: 34px;
+  &.break {
+    margin-top: 14px;
+  }
+  &.introduction {
+    margin-top: 24px;
+    @extend %ghost-1;
+  }
+}
+
+h1 {
+  color: darken($teal-1, 15.4%);
+  font-size: $h1-size;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 120px;
+  letter-spacing: -3px;
+}
+
+h2 {
+  @extend %gray-2;
+  font-size: $h2-size;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.projects h2 {
+  margin-bottom: 44px;
+}
+
+h3 {
+  font-family: 'Titillium Web', sans-serif;
+  @extend %ghost-1;
+  font-size: $h3-size;
+  font-weight: 700;
+  font-style: italic;
+}
+
+h4 {
+  font-family: 'Titillium Web', sans-serif;
+  @extend %gray-4;
+  font-size: $h4-size;
+  font-weight: 700;
+  font-style: italic;
+  padding-left: 3px;
+  padding-bottom: 64px;
+}
+
+header {
+  &#project {
+    p {
+      padding-top: 24px;
+      color: darken($teal-1, 15.4%)
+    }
+  }
+}
+
+#footer {
+  p {
+    @extend %gray-2;
+  }
+  h3 {
+    @extend %gray-3;
+    padding:0;
+  }
+}
+
+#project {
+  p {
+    text-transform: initial;
+  }
+}
+
+span {
+  &.caption {
+    background-color: $ghost-1;
+    padding:8px 10px;
+    display:block;
+    text-transform:initial;
+    font-size:14px;
+    color: $gray-1;
+    font-style: italic;
+    margin-bottom:24px;
+  }
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  padding: 2px;
+  text-decoration: none;
+  background-color: none;
+  -webkit-transition: all 0.1s ease-in;
+  &:hover {
+    background-color: $teal-1;
+    color: $ghost-1;
+    //-webkit-transition: all 0.1s ease-out;
+  }
+}
+
+%th-icon {
+
+}

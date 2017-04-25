@@ -1,0 +1,11 @@
+// bower:scss
+// endbower
+
+// box-sizing
+@mixin box-sizing($sizing-setting) {
+  -webkit-box-sizing: $sizing-setting;
+  -moz-box-sizing: $sizing-setting;
+  box-sizing: $sizing-setting;
+}
+
+// end

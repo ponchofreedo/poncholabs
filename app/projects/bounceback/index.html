@@ -1,0 +1,94 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>zach freed // bounceback</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css ../../styles/poncholabs.css -->
+    <link rel="stylesheet" href="/styles/poncholabs.css">
+    <!-- endbuild -->
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>00866d
+    <![endif]-->
+
+    <header class="header--container" id="project">
+      <div class="home--main-container grid">
+        <div class="grid--row row">
+          <div class="row-pad-3" id="project-header">
+            <span class="floater-container">
+                <h4 class="floater"><a href="/#projects">go back.</a></h4>
+            </span>
+            <h1>tm bounceback</h1>
+            <p>my 2nd go around with this template</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main--container" id="project">
+      <div class="home--main-container grid">
+        <div class="grid--row row">
+          <section class="row-pad-3" id="project-content">
+            <article>
+                <h4 class="text-left">overview.</h4>
+                <p>This has proven to be one of the more difficult templates to iterate on over the past few years. I was tasked with originally just updating some sections of the template on the previous version, but talked the team into completely rebuilding it ahead of our original schedule because of the daunting refactoring process I had to go through...definitely a "10 points for Gryffindor" moment.</p>
+                <p class="break">The basis of this template is to offer cross-sells to the customer around 20 minutes after they booked a flight, car, or hotel (non-package products). In that idea, the cross-sells should be somewhat reminiscent of the ones that we use in the accept and pre-travel templates, but in this case we were also introducing a new deals api for Express Deals which called for an updated design. Also not too long after that we also included a new RC cross-sell api which again caused the design to change.</p>
+                <p class="break">The development effort was relatively straightforward except with a new caveat of being able to show an integrated style of rental car or hotel listing; meaning that we could show the customer an Express Deal next to a retail deal for hotel, or NYOP/BIN deal for RC. I had to rethink the current 2x2 layout that I had for both sections and come up with something that worked much cleaner. And because of how this template was now being built, I wanted to include a new layer of variability that we didn't have before: the concept of adapting the section to the number of deals returned. So inside each module of the template, I have a lot of new conditional logic that is triggered based on the number of deals returned.</p>
+                <img height="auto" width="100%" src="/images/bounceback/hotel_old.jpg" align="center" />
+                <span class="caption">Old version of Hotel Bounceback</span>
+                <img height="auto" width="100%" src="/images/bounceback/rc_old.jpg" align="center" />
+                <span class="caption">Old version of RC Bounceback</span>
+            </article>
+            <article style="padding-top:48px;">
+                <h4 class="text-left">the redesign.</h4>
+                <p>The new addition of FTL logic allowed me to come up with a few different and modular layouts on the template. Each product looks similar and they share all the same cross-sells.</p>
+                <img height="auto" width="100%" src="/images/bounceback/air_redesign.png" />
+                <span class="caption">Variable design with several new and updated elements.</span>
+                <p class="break">We actually tested this template in pieces. I built all the old cross-sells so we could do a direct comparison of the new layout, then introduced the updated top section with the insurance cross-sell and opening line/cta. This test immediately trended positive which allowed me to introduce a 4-variant test for the cross-sells. After some minor tweaking I was able to get this test to be the winner inside of 2 weeks. As presented, we have 2 different RC cross-sell layouts and 2 different hotel deal presentations. The RC layout is more driven (no pun intended) by the number of deals but will also slightly vary in each layout based on the OMC of the deal. And with the hotel layout it will change depending on the product OMC that they purchased...but we also have some determining logic to introduce a retail or Express Deal if the pricing is better than the other.</p>
+                <p class="break">All in all, this was a very successful test for all products and I look forward to iterating on it at some point this year.</p>
+            </article>
+          </section>
+        </div>
+      </div>
+    </div>
+    <footer class="footer--container">
+      <div class="footer--main-container grid">
+        <div class="grid--row row">
+          <div class="row-pad-3" id="footer">
+            <h3 class="text-center"><a href="/#projects">go back.</a></h3>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+  </body>
+</html>
