@@ -1,2 +1,2 @@
 # poncholabs
-My personal portfolio. At this moment considering writing a simple Angular application to handle portfolio work/gallery and then adding in a blog application.
+This was supposed to be my portfolio, but I ended up using this repo as a work portfolio, for review time, this past year (2016).
